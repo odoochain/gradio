@@ -30,7 +30,6 @@ from functools import wraps
 from io import BytesIO
 from numbers import Number
 from pathlib import Path
-from queue import Queue as ThreadQueue
 from types import AsyncGeneratorType, GeneratorType, ModuleType
 from typing import (
     TYPE_CHECKING,
@@ -131,7 +130,6 @@ class SourceFileReloader(BaseReloader):
         watch_module_name: str,
         demo_file: str,
         stop_event: threading.Event,
-        reload_queue: ThreadQueue,
         demo_name: str = "demo",
     ) -> None:
         super().__init__()
@@ -139,7 +137,6 @@ class SourceFileReloader(BaseReloader):
         self.watch_dirs = watch_dirs
         self.watch_module_name = watch_module_name
         self.stop_event = stop_event
-        self.reload_queue = reload_queue
         self.demo_name = demo_name
         self.demo_file = Path(demo_file)
 
@@ -153,12 +150,13 @@ class SourceFileReloader(BaseReloader):
     def stop(self) -> None:
         self.stop_event.set()
 
-    def alert_change(self, change_type: Literal["change", "error"] = "change"):
-        self.reload_queue.put(change_type)
+    def alert_change(self, change_type: Literal["reload", "error"] = "reload"):
+        self.app.change_type = change_type
+        self.app.change_count += 1
 
     def swap_blocks(self, demo: Blocks):
         super().swap_blocks(demo)
-        self.alert_change("change")
+        self.alert_change("reload")
 
 
 NO_RELOAD = True

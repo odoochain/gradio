@@ -1,5 +1,35 @@
 # @gradio/app
 
+## 1.34.0
+
+### Features
+
+- [#8109](https://github.com/gradio-app/gradio/pull/8109) [`bed2f82`](https://github.com/gradio-app/gradio/commit/bed2f82e2297b50f7b59423a3de05af0b9910724) - Implement JS Client tests.  Thanks @hannahblair!
+- [#7855](https://github.com/gradio-app/gradio/pull/7855) [`611c927`](https://github.com/gradio-app/gradio/commit/611c9273a301e925b5aad93a19272dccd53c39fa) - Lite wheel optimization.  Thanks @whitphx!
+
+### Dependency updates
+
+- @gradio/code@0.6.1
+- @gradio/button@0.2.33
+- @gradio/upload@0.9.1
+- @gradio/client@0.18.0
+- @gradio/annotatedimage@0.5.14
+- @gradio/audio@0.10.1
+- @gradio/chatbot@0.9.1
+- @gradio/dataset@0.1.33
+- @gradio/downloadbutton@0.1.10
+- @gradio/file@0.6.1
+- @gradio/fileexplorer@0.4.1
+- @gradio/gallery@0.9.1
+- @gradio/image@0.10.1
+- @gradio/imageeditor@0.6.1
+- @gradio/model3d@0.9.1
+- @gradio/multimodaltextbox@0.3.1
+- @gradio/simpleimage@0.4.1
+- @gradio/uploadbutton@0.6.1
+- @gradio/video@0.7.1
+- @gradio/dataframe@0.7.1
+
 ## 1.33.0
 
 ### Highlights

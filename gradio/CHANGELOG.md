@@ -1,5 +1,16 @@
 # gradio
 
+## 4.29.0
+
+### Features
+
+- [#8109](https://github.com/gradio-app/gradio/pull/8109) [`bed2f82`](https://github.com/gradio-app/gradio/commit/bed2f82e2297b50f7b59423a3de05af0b9910724) - Implement JS Client tests.  Thanks @hannahblair!
+- [#7855](https://github.com/gradio-app/gradio/pull/7855) [`611c927`](https://github.com/gradio-app/gradio/commit/611c9273a301e925b5aad93a19272dccd53c39fa) - Lite wheel optimization.  Thanks @whitphx!
+
+### Fixes
+
+- [#8170](https://github.com/gradio-app/gradio/pull/8170) [`08b4e61`](https://github.com/gradio-app/gradio/commit/08b4e6172340952460ae4947ff45c4bbef9ec285) - Add ETag to `/custom_component` route to control browser caching.  Thanks @freddyaboulton!
+
 ## 4.28.3
 
 ### Fixes

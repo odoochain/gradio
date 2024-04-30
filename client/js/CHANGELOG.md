@@ -1,5 +1,11 @@
 # @gradio/client
 
+## 0.18.0
+
+### Features
+
+- [#8109](https://github.com/gradio-app/gradio/pull/8109) [`bed2f82`](https://github.com/gradio-app/gradio/commit/bed2f82e2297b50f7b59423a3de05af0b9910724) - Implement JS Client tests.  Thanks @hannahblair!
+
 ## 0.17.0
 
 ### Highlights

@@ -1,5 +1,11 @@
 # website
 
+## 0.28.0
+
+### Features
+
+- [#8152](https://github.com/gradio-app/gradio/pull/8152) [`989fe25`](https://github.com/gradio-app/gradio/commit/989fe2566fc93e4f67dc86a869dc30e83404c7ab) - Make guide for tailwind more verbose.  Thanks @duerrsimon!
+
 ## 0.27.0
 
 ### Features
